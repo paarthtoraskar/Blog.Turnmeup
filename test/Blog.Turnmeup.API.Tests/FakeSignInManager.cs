@@ -15,7 +15,8 @@ namespace Blog.Turnmeup.API.Tests
                   new HttpContextAccessor(),
                   new Mock<IUserClaimsPrincipalFactory<AppUser>>().Object,
                   new Mock<IOptions<IdentityOptions>>().Object,
-                  new Mock<ILogger<SignInManager<AppUser>>>().Object )
+                  new Mock<ILogger<SignInManager<AppUser>>>().Object,
+                  null)
         { }
     }
 }
